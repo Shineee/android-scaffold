@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- 如需备份特定文件/数据库，在此配置；默认排除敏感目录 -->
+    <exclude domain="sharedpref" path="." />
+</full-backup-content>

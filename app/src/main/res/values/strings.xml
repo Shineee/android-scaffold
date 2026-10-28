@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Scaffold</string>
+
+    <!-- 导航 -->
+    <string name="nav_home">首页</string>
+    <string name="nav_settings">设置</string>
+
+    <!-- 通用 -->
+    <string name="action_refresh">刷新</string>
+    <string name="action_retry">重试</string>
+    <string name="state_loading">加载中…</string>
+    <string name="state_empty">暂无数据</string>
+    <string name="state_error">加载失败：%1$s</string>
+
+    <!-- 首页 -->
+    <string name="home_title">Scaffold</string>
+
+    <!-- 设置 -->
+    <string name="settings_title">设置</string>
+    <string name="settings_theme_title">深色模式</string>
+    <string name="settings_theme_system">跟随系统</string>
+    <string name="settings_theme_light">浅色</string>
+    <string name="settings_theme_dark">深色</string>
+    <string name="settings_about_title">关于</string>
+    <string name="settings_version">版本 %1$s</string>
+</resources>
