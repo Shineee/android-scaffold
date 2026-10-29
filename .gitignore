@@ -9,9 +9,7 @@ build/
 .cxx/
 *.apk
 *.aab
-*.jks
 *.keystore
-keystore.properties
 *.log
 
 # Tool session state
