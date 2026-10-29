@@ -8,18 +8,19 @@
 
 | 类别 | 选型 | 版本 |
 | --- | --- | --- |
-| 语言 / 构建 | Kotlin（AGP 内置 Kotlin）、Gradle Wrapper | 2.4.21 / 9.8.0 |
+| 语言 / 构建 | Kotlin（AGP 内置 Kotlin）、KSP、Gradle Wrapper | 2.4.21 / 2.3.12 / 9.8.0 |
 | AGP | com.android.application | 9.4.1 |
 | UI | Jetpack Compose + Material3 + 底部导航 | BOM 2026.09.00 |
 | 导航 | Navigation Compose | 2.10.2 |
+| AndroidX 基础 | Core-KTX / Lifecycle / Activity | 1.19.1 / 2.11.0 / 1.13.0 |
 | 架构 | MVVM + UDF + Repository + 离线优先（Room 为唯一数据源） | — |
 | 依赖注入 | Koin | 4.2.2 |
-| 网络 | Retrofit 3 + OkHttp 5.5 + kotlinx-serialization + 日志拦截器 | 3.0.0 / 5.5.1 |
-| 本地存储 | Room（KSP）、DataStore Preferences | 2.8.5 / 1.3.0 |
+| 网络 | Retrofit / OkHttp / kotlinx-serialization | 3.0.0 / 5.5.1 / 1.12.0 |
+| 本地存储 | Room / DataStore Preferences | 2.8.5 / 1.3.0 |
 | 后台任务 | WorkManager（含 SyncWorker 示例） | 2.12.0 |
 | 图片 | Coil 3 | 3.6.3 |
 | 权限 | Accompanist Permissions（预留） | 0.37.3 |
-| 测试 | JUnit4 + coroutines-test + Compose UI Test | — |
+| 测试 | JUnit4 / androidx-junit / coroutines-test / Espresso | 4.13.2 / 1.3.0 / 1.11.0 / 3.7.0 |
 
 依赖仓库配置了阿里云镜像，国内构建更快。
 
