@@ -2,24 +2,26 @@
 
 拿来即写业务代码的 Android 脚手架：Compose + 离线优先 + Retrofit + Room + DataStore + Koin，附带首页/设置两个可运行示例页。
 
+架构遵循 Google 官方《应用架构指南》：**单 Activity + Compose、UI 层 / 数据层（+ 可选领域层）分层、单向数据流（UDF）、数据库作为唯一数据源（离线优先）、依赖注入**；依赖版本均为当前最新稳定版。
+
 ## 技术栈
 
 | 类别 | 选型 | 版本 |
 | --- | --- | --- |
-| 语言 / 构建 | Kotlin（AGP 内置 Kotlin）、Gradle Wrapper | 2.2.10 / 9.8.0 |
-| AGP | com.android.application | 9.4.0 |
-| UI | Jetpack Compose + Material3 + 底部导航 | BOM 2026.02.01 |
-| 导航 | Navigation Compose | 2.9.0 |
-| 架构 | MVVM + Repository + 离线优先（Room 为唯一数据源） | — |
-| 依赖注入 | Koin | 4.0.4 |
-| 网络 | Retrofit 3 + OkHttp 5 + kotlinx-serialization + 日志拦截器 | — |
-| 本地存储 | Room（KSP）、DataStore Preferences | 2.7.1 / 1.1.7 |
-| 后台任务 | WorkManager（含 SyncWorker 示例） | 2.10.2 |
-| 图片 | Coil | 2.7.0 |
-| 权限 | Accompanist Permissions（预留） | 0.37.0 |
+| 语言 / 构建 | Kotlin（AGP 内置 Kotlin）、Gradle Wrapper | 2.4.21 / 9.8.0 |
+| AGP | com.android.application | 9.4.1 |
+| UI | Jetpack Compose + Material3 + 底部导航 | BOM 2026.09.00 |
+| 导航 | Navigation Compose | 2.10.2 |
+| 架构 | MVVM + UDF + Repository + 离线优先（Room 为唯一数据源） | — |
+| 依赖注入 | Koin | 4.2.2 |
+| 网络 | Retrofit 3 + OkHttp 5.5 + kotlinx-serialization + 日志拦截器 | 3.0.0 / 5.5.1 |
+| 本地存储 | Room（KSP）、DataStore Preferences | 2.8.5 / 1.3.0 |
+| 后台任务 | WorkManager（含 SyncWorker 示例） | 2.12.0 |
+| 图片 | Coil 3 | 3.6.3 |
+| 权限 | Accompanist Permissions（预留） | 0.37.3 |
 | 测试 | JUnit4 + coroutines-test + Compose UI Test | — |
 
-版本组合与本机 `sms` 项目一致（AGP 9.4.0 + Kotlin 2.2.10 + KSP 2.2.10-2.0.2），已验证可编译；依赖仓库配置了阿里云镜像，国内构建更快。
+依赖仓库配置了阿里云镜像，国内构建更快。
 
 ## 目录结构
 
@@ -101,6 +103,5 @@ keyPassword=******
 ## 说明与取舍
 
 - 单 module 起步，业务变大时可按 `domain/data/ui` 拆 `:core:network`、`:feature:xxx` 等多模块。
-- Koin 4.0.4（Kotlin 2.0.21 编译）与当前 Kotlin 2.2.10 元数据兼容；更高版本 Koin（≥4.1）由 Kotlin 2.3+ 编译，升级 Kotlin 前不要升 Koin。
-- `kotlinx-serialization-json` 锁定 1.9.0（1.10+ 由 Kotlin 2.3 编译，同理）。
 - 深色模式默认开启动态取色（Android 12+），`AppTheme(dynamicColor = false)` 可关闭改用品牌色。
+- 依赖版本集中在 `gradle/libs.versions.toml`，升级时统一改 `[versions]` 即可。

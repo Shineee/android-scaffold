@@ -1,4 +1,4 @@
-﻿package com.scaffold.app.ui.home
+package com.scaffold.app.ui.home
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -31,7 +31,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import coil.compose.AsyncImage
+import coil3.compose.AsyncImage
 import com.scaffold.app.R
 import com.scaffold.app.domain.model.Post
 import com.scaffold.app.ui.components.EmptyView
