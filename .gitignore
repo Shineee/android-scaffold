@@ -16,3 +16,4 @@ keystore.properties
 
 # Tool session state
 .mimocode/
+build.log*
