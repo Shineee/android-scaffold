@@ -4,6 +4,8 @@
 
 架构遵循 Google 官方《应用架构指南》：**单 Activity + Compose、UI 层 / 数据层（+ 可选领域层）分层、单向数据流（UDF）、数据库作为唯一数据源（离线优先）、依赖注入**；依赖版本均为当前最新稳定版。
 
+**[↓ 下载签名 Release APK（v1.0.0）](https://github.com/Shineee/android-scaffold/releases/download/v1.0.0/scaffold-v1.0.0-release.apk)** · [全部 Release](https://github.com/Shineee/android-scaffold/releases)
+
 ## 技术栈
 
 | 类别 | 选型 | 版本 |
